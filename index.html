@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,46 +11,92 @@
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
   <title>trillo &mdash; Your all-in-one booking app</title>
+
 </head>
 
 <body>
 
-  <h1>Hello World</h1>
 
-  <section class="section-top-bar">
-    <div class="top-bar">
-      <div class="top-bar__logo">
-        <img class="top-bar__logo-pic" src="./img/logo.png" alt="logo">
-      </div>
-      <div class="top-bar__search">
-        <input class="top-bar__search-text" type="text">
-        <svg class="top-bar__search-ico">
-          <use xlink:href=" ./img/sprite.svg#icon-magnifying-glass "></use>
-        </svg>
-      </div>
-      <div class="top-bar__user ">
-        <div class="top-bar__user-bookmarks ">
-          <svg class="top-bar__user-ico ">
-            <use xlink:href="./img/sprite.svg#icon-bookmark "></use>
+
+  <div class="container">
+    <section class="section-topbar">
+      <div class="topbar">
+        <div class="topbar__logo">
+          <img class="topbar__logo-pic" src="./img/logo.png" alt="logo">
+        </div>
+        <div class="topbar__search">
+          <input class="topbar__search-text" type="text">
+          <svg class="topbar__search-ico">
+            <use xlink:href=" ./img/sprite.svg#icon-magnifying-glass "></use>
           </svg>
-          <div class="top-bar__user-counter ">
-            7
+        </div>
+        <div class="topbar__user ">
+          <div class="topbar__user-bookmarks ">
+            <svg class="topbar__user-ico ">
+              <use xlink:href="./img/sprite.svg#icon-bookmark "></use>
+            </svg>
+            <div class="topbar__user-counter ">
+              7
+            </div>
+          </div>
+          <div class="topbar__user-chat ">
+            <svg class="topbar__user-ico ">
+              <use xlink:href="./img/sprite.svg#icon-chat "></use>
+            </svg>
+            <div class="topbar__user-counter ">
+              13
+            </div>
+          </div>
+          <div class="topbar__user-profile ">
+            <img src="./img/user.jpg" alt="user-pic" class="topbar__user-pic">
+            <div class="topbar__user-name">Jonas</div>
           </div>
         </div>
-        <div class="top-bar__user-chat ">
-          <svg class="top-bar__user-ico ">
-            <use xlink:href="./img/sprite.svg#icon-chat "></use>
-          </svg>
-          <div class="top-bar__user-counter ">
-            13
-          </div>
-        </div>
-        <div class="top-bar__user-profile ">
-          <img src="./img/user.jpg" alt="user-pic" class="top-bar__user-pic">
-          <div class="top-bar__user-name">Jonas</div>
-        </div>
       </div>
-  </section>
+    </section>
+    <div class="content"></div>
+    <nav class="sidebar">
+      <ul class="sidebar__nav">
+        <li class="sidebar__list">
+          <a href="#" class="sidebar__link">
+            <!-- <svg class="sidebar__svg">
+                            <use xlink:href="./img/sprite.svg#icon-home"></use>
+                        </svg> -->
+            <span>hotel</span>
+          </a>
+        </li>
+        <li class="sidebar__list">
+          <a href="#" class="sidebar__link">
+            <!-- <svg class="sidebar__svg">
+                            <use xlink:href="./img/sprite.svg#icon-aircraft-take-off"></use>
+                        </svg> -->
+            <span>flight</span>
+          </a>
+        </li>
+        <li class="sidebar__list">
+          <a href="#" class="sidebar__link">
+            <!-- <svg class="sidebar__svg">
+                            <use xlink:href="./img/sprite.svg#icon-key"></use>
+                        </svg> -->
+            <span>car rental</span>
+          </a>
+        </li>
+        <li class="sidebar__list">
+          <a href="#" class="sidebar__link">
+            <!-- <svg class="sidebar__svg">
+                            <use xlink:href="./img/sprite.svg#icon-map"></use>
+                        </svg> -->
+            <span>tours</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="mull">
+      <div class="gallery"></div>
+      <div class="hotel"></div>
+    </main>
+  </div>
+
 
 
 </body>
