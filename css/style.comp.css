@@ -43,46 +43,6 @@ a:visited {
 li {
   list-style: none; }
 
-.booking {
-  background-color: #faf9f9;
-  color: #333;
-  padding: 4rem 8rem;
-  text-align: center; }
-  .booking__text {
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 3rem; }
-  .booking__button {
-    color: white;
-    font-weight: 300;
-    font-size: 2rem;
-    background-color: #eb2f64;
-    background-image: linear-gradient(to right, #eb2f64, #BA265D);
-    border: none;
-    outline: none;
-    display: inline-block;
-    border-radius: 666px;
-    position: relative;
-    overflow: hidden; }
-    .booking__button > span {
-      display: inline-block; }
-    .booking__button:hover {
-      background-image: linear-gradient(to right, #BA265D, #eb2f64); }
-  .booking__main {
-    padding: 2rem 12rem;
-    transition: all .5s; }
-  .booking__alt {
-    padding: 2rem 0;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transition: all .5s;
-    transform: translateX(-50%); }
-  .booking__button:hover .booking__main {
-    transform: translateY(-100%); }
-  .booking__button:hover .booking__alt {
-    top: 0; }
-
 .content {
   display: flex;
   background-color: red;
@@ -140,6 +100,46 @@ li {
 
 .mull {
   flex: 1; }
+
+.booking {
+  background-color: #faf9f9;
+  color: #333;
+  padding: 4rem 8rem;
+  text-align: center; }
+  .booking__text {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 3rem; }
+  .booking__button {
+    color: white;
+    font-weight: 300;
+    font-size: 2rem;
+    background-color: #eb2f64;
+    background-image: linear-gradient(to right, #eb2f64, #BA265D);
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 666px;
+    position: relative;
+    overflow: hidden; }
+    .booking__button > span {
+      display: inline-block; }
+    .booking__button:hover {
+      background-image: linear-gradient(to right, #BA265D, #eb2f64); }
+  .booking__main {
+    padding: 2rem 12rem;
+    transition: all .5s; }
+  .booking__alt {
+    padding: 2rem 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all .5s;
+    transform: translateX(-50%); }
+  .booking__button:hover .booking__main {
+    transform: translateY(-100%); }
+  .booking__button:hover .booking__alt {
+    top: 0; }
 
 .section-topbar .topbar {
   padding: 0 2rem;
