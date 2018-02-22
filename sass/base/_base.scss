@@ -9,6 +9,9 @@
 html {
   font-size: 62.5%;
 
+  @include respond(tab) {
+    font-size: 50%;
+}
 
 }
 
@@ -27,6 +30,7 @@ a:visited {
   color: inherit;
   font-size: inherit;
   text-decoration: none;
+  font-family: inherit;
 }
 
 li {

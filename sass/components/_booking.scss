@@ -1,19 +1,19 @@
 .booking {
   background-color: $Grey-light-1;
   color: $Grey-dark-1;
-  padding: 4rem 8rem;
+  padding: 3rem 5rem;
   text-align: center;
 
   &__text {
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 3rem; 
+    margin-bottom: 2.5rem; 
   }
 
   &__button {
     color: white;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: $Primary ;
     background-image: linear-gradient(to right, $Primary, $Primary-dark);
     border: none;
@@ -22,6 +22,7 @@
     border-radius: 666px;
     position: relative;
     overflow: hidden;
+    
     
     & > span { 
       display: inline-block;
@@ -35,7 +36,7 @@
   }
 
   &__main {
-    padding: 2rem 12rem;
+    padding: 2rem 10rem;
     transition: all .5s;
   }
   
