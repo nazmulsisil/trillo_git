@@ -1,0 +1,55 @@
+.booking {
+  background-color: $Grey-light-1;
+  color: $Grey-dark-1;
+  padding: 4rem 8rem;
+  text-align: center;
+
+  &__text {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 3rem;
+  }
+
+  &__button {
+    color: white;
+    font-weight: 300;
+    font-size: 2rem;
+    background-color: $Primary ;
+    background-image: linear-gradient(to right, $Primary, $Primary-dark);
+    border: none;
+    outline: none;
+    display: inline-block;
+    border-radius: 666px;
+    position: relative;
+    overflow: hidden;
+
+    & > span { 
+      display: inline-block;
+
+    }
+
+  }
+
+  &__main {
+    padding: 3rem 15rem;
+    transition: all .5s;
+  }
+  
+  &__alt {
+    padding: 3rem 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all .5s;
+    transform: translateX(-50%);
+  }
+  
+  &__button:hover &__main {
+    transform: translateY(-100%);
+  }
+  
+  &__button:hover &__alt {
+    top: 0;
+  }
+
+}

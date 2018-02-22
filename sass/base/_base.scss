@@ -6,19 +6,6 @@
   box-sizing: inherit;
 }
 
-button,
-input,
-a:link,
-a:visited {
-  color: inherit;
-  font-size: inherit;
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
 html {
   font-size: 62.5%;
 
@@ -31,4 +18,17 @@ body {
   background-color: $Primary;
   font-size: 1.6rem;
   color: $Grey-dark-3;
+}
+
+button,
+input,
+a:link,
+a:visited {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
