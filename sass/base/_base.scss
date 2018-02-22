@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+button,
+input,
+a:link,
+a:visited {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: $Primary;
+  font-size: 1.6rem;
+  color: $Grey-dark-3;
+}
