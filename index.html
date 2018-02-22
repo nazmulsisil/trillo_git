@@ -2,19 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    <title>trillo &mdash; Your all-in-one booking app</title>
+  <title>trillo &mdash; Your all-in-one booking app</title>
 </head>
 
 <body>
 
-    <h1>Hello World</h1>
+  <h1>Hello World</h1>
+
+  <section class="section-top-bar">
+    <div class="top-bar">
+      <div class="top-bar__logo">
+        <img class="top-bar__logo-pic" src="./img/logo.png" alt="logo">
+      </div>
+      <div class="top-bar__search">
+        <input class="top-bar__search-text" type="text">
+        <svg class="top-bar__search-ico">
+          <use xlink:href=" ./img/sprite.svg#icon-magnifying-glass "></use>
+        </svg>
+      </div>
+      <div class="top-bar__user ">
+        <div class="top-bar__user-bookmarks ">
+          <svg class="top-bar__user-ico ">
+            <use xlink:href="./img/sprite.svg#icon-bookmark "></use>
+          </svg>
+          <div class="top-bar__user-counter ">
+            7
+          </div>
+        </div>
+        <div class="top-bar__user-chat ">
+          <svg class="top-bar__user-ico ">
+            <use xlink:href="./img/sprite.svg#icon-chat "></use>
+          </svg>
+          <div class="top-bar__user-counter ">
+            13
+          </div>
+        </div>
+        <div class="top-bar__user-profile ">
+          <img src="./img/user.jpg" alt="user-pic" class="top-bar__user-pic">
+          <div class="top-bar__user-name">Jonas</div>
+        </div>
+      </div>
+  </section>
+
 
 </body>
 
