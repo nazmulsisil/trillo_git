@@ -6,7 +6,8 @@
 }
 .sidebar {
     flex: 0 0 18%;
-    background: orange; 
+    background: $Grey-dark-1; 
+    padding-top: 4rem;
      
     display: flex;
     flex-direction: column;
@@ -14,25 +15,64 @@
 
 
     &__nav {
-        align-self: stretch;
-        background-color: green;
         list-style: none;
     }
 
-    &__list {
-background: rebeccapurple;
+    &__list,{
+        
 
-align-self: stretch;
-    }
+        &:not(:last-child) {
+            margin-bottom: .4rem;
+            }
+        position: relative;
+        z-index: 500;
+        
+        &::after{
+            content: "";
+            width: 4px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $Primary;
+            transform: scaleY(0);
+            transition: transform .3s,  width .4s .3s, background.1s;
+            z-index: -1;
+           
+        }
 
-    &__link {
-        color: #fff; 
-        text-decoration: none;
 
-        display: flex;
-        align-items: center;
         
     }
+    &__list:hover::after,
+    &__list--active::after {
+            width: 100%; 
+            transform: scaleY(1);
+    } 
+    
+    &__list:active::after {
+        background: $Primary-light;
+    }
+
+    &__link   { 
+
+            &:link,
+            &:visited{
+                color: $Grey-light-1; 
+                text-decoration: none;
+                display: inline-block;
+                padding: 1.5rem 2.5rem;
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                 z-index: 100;
+               
+
+                display: flex;
+                align-items: center;
+            }
+        
+
+    } 
 
     &__svg {
         height: 2rem;
@@ -42,7 +82,9 @@ align-self: stretch;
     }
 
     &__copyright {
-        padding: 3rem;
+        padding: 2.5rem ;
+        font-size: 1.2rem;
+       text-align: center;
     }
 
 }

@@ -15,6 +15,40 @@ Grey dark 2: #777
 Grey dark 3: #999 
  
 */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+button,
+input,
+a:link,
+a:visited {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+  background-color: #eb2f64;
+  font-size: 1.6rem;
+  color: #999; }
+
+.container {
+  max-width: 120rem;
+  min-width: 80vh;
+  box-shadow: 0 4rem 13rem rgba(0, 0, 0, 0.3);
+  margin: 5rem auto; }
+
 .content {
   display: flex;
   background-color: red;
@@ -22,20 +56,42 @@ Grey dark 3: #999
 
 .sidebar {
   flex: 0 0 18%;
-  background: orange;
+  background: #333;
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
   .sidebar__nav {
-    align-self: stretch;
-    background-color: green;
     list-style: none; }
   .sidebar__list {
-    background: rebeccapurple;
-    align-self: stretch; }
-  .sidebar__link {
-    color: #fff;
+    position: relative;
+    z-index: 500; }
+    .sidebar__list:not(:last-child) {
+      margin-bottom: .4rem; }
+    .sidebar__list::after {
+      content: "";
+      width: 4px;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #eb2f64;
+      transform: scaleY(0);
+      transition: transform 0.3s, width 0.4s 0.3s, background 0.1s;
+      z-index: -1; }
+  .sidebar__list:hover::after, .sidebar__list--active::after {
+    width: 100%;
+    transform: scaleY(1); }
+  .sidebar__list:active::after {
+    background: #FF3366; }
+  .sidebar__link:link, .sidebar__link:visited {
+    color: #faf9f9;
     text-decoration: none;
+    display: inline-block;
+    padding: 1.5rem 2.5rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    z-index: 100;
     display: flex;
     align-items: center; }
   .sidebar__svg {
@@ -44,7 +100,9 @@ Grey dark 3: #999
     fill: currentColor;
     margin-right: 1.5rem; }
   .sidebar__copyright {
-    padding: 3rem; }
+    padding: 2.5rem;
+    font-size: 1.2rem;
+    text-align: center; }
 
 .mull {
   flex: 1; }
