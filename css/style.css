@@ -43,12 +43,6 @@ a:visited {
 li {
   list-style: none; }
 
-.container {
-  max-width: 120rem;
-  min-width: 80vh;
-  box-shadow: 0 4rem 13rem rgba(0, 0, 0, 0.3);
-  margin: 5rem auto; }
-
 .booking {
   background-color: #faf9f9;
   color: #333;
@@ -73,10 +67,10 @@ li {
     .booking__button > span {
       display: inline-block; }
   .booking__main {
-    padding: 3rem 15rem;
+    padding: 2rem 12rem;
     transition: all .5s; }
   .booking__alt {
-    padding: 3rem 0;
+    padding: 2rem 0;
     position: absolute;
     top: 100%;
     left: 50%;
@@ -86,3 +80,74 @@ li {
     transform: translateY(-100%); }
   .booking__button:hover .booking__alt {
     top: 0; }
+
+.section-topbar .topbar {
+  padding: 0 2rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #faf9f9; }
+  .section-topbar .topbar__logo-pic {
+    height: 2rem; }
+  .section-topbar .topbar__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%; }
+    .section-topbar .topbar__search-text {
+      padding-left: 1rem 3rem;
+      height: 2rem;
+      outline: none;
+      border: none;
+      background-color: #ccc;
+      width: 90%;
+      border-radius: 100rem;
+      transition: all .5s;
+      font-size: 1.4rem; }
+      .section-topbar .topbar__search-text::placeholder {
+        font-size: 1rem;
+        color: #777; }
+      .section-topbar .topbar__search-text:focus {
+        width: 100%; }
+    .section-topbar .topbar__search-ico {
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-left: -3rem; }
+    @media (max-width: 600px) {
+      .section-topbar .topbar__search {
+        order: 1;
+        width: 100%; } }
+  .section-topbar .topbar__user {
+    display: flex;
+    align-items: center; }
+    .section-topbar .topbar__user-bookmarks, .section-topbar .topbar__user-chat {
+      width: 4rem;
+      position: relative;
+      display: flex;
+      align-items: center; }
+    .section-topbar .topbar__user-ico {
+      height: 2rem;
+      width: 2rem; }
+    .section-topbar .topbar__user-counter {
+      height: 1.5rem;
+      width: 1.5rem;
+      font-size: .7rem;
+      background-color: #FF3366;
+      border-radius: 50%;
+      position: absolute;
+      top: -20%;
+      right: 30%; }
+    .section-topbar .topbar__user-profile {
+      display: flex;
+      align-items: center; }
+    .section-topbar .topbar__user-pic {
+      height: 3rem;
+      border-radius: 50%;
+      margin-right: 1rem; }
+
+.container {
+  max-width: 120rem;
+  min-width: 80vh;
+  box-shadow: 0 4rem 13rem rgba(0, 0, 0, 0.3);
+  margin: 5rem auto; }
