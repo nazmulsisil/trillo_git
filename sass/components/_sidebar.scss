@@ -12,6 +12,12 @@
     flex: 0 0 18%;
     background: $Grey-dark-1; 
     padding-top: 4rem;
+    
+    @include respond (tab) {
+        flex: 0 0 auto;
+        
+    }
+
 
    
      
@@ -115,7 +121,6 @@
 
     @include respond (tab) {
        padding-top: 0;
-       flex: 0 0 9%;
     }
 
 }
