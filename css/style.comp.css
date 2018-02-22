@@ -24,6 +24,9 @@ Grey dark 3: #999
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 900px) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -38,7 +41,8 @@ a:link,
 a:visited {
   color: inherit;
   font-size: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: inherit; }
 
 li {
   list-style: none; }
@@ -104,16 +108,16 @@ li {
 .booking {
   background-color: #faf9f9;
   color: #333;
-  padding: 4rem 8rem;
+  padding: 3rem 5rem;
   text-align: center; }
   .booking__text {
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 3rem; }
+    margin-bottom: 2.5rem; }
   .booking__button {
     color: white;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: #eb2f64;
     background-image: linear-gradient(to right, #eb2f64, #BA265D);
     border: none;
@@ -127,7 +131,7 @@ li {
     .booking__button:hover {
       background-image: linear-gradient(to right, #BA265D, #eb2f64); }
   .booking__main {
-    padding: 2rem 12rem;
+    padding: 2rem 10rem;
     transition: all .5s; }
   .booking__alt {
     padding: 2rem 0;
@@ -183,6 +187,7 @@ li {
       fill: #777; }
     @media (max-width: 600px) {
       .section-topbar .topbar__search {
+        margin-left: -.5rem;
         order: 1;
         width: 100%; } }
   .section-topbar .topbar__user {

@@ -60,8 +60,9 @@
         margin-left: -3rem;
         fill: $Grey-dark-2;
       }
-
+      
       @include respond(phone){
+        margin-left: -.5rem;
         order: 1;
         width: 100%;
       }
