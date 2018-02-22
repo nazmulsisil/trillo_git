@@ -1,13 +1,19 @@
 .content {
     display: flex;
-    background-color: red;
-    height: 40rem;
+    background-color: rgba(255, 0, 0, 0.295);
+    height: 60rem;
+
+    @include respond (tab) {
+        flex-direction: column;  
+    }
 
 }
 .sidebar {
     flex: 0 0 18%;
     background: $Grey-dark-1; 
     padding-top: 4rem;
+
+   
      
     display: flex;
     flex-direction: column;
@@ -16,10 +22,17 @@
 
     &__nav {
         list-style: none;
+
+        
+        @include respond (tab) {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__list,{
         
+
 
         &:not(:last-child) {
             margin-bottom: .4rem;
@@ -40,8 +53,10 @@
             z-index: -1;
            
         }
-
-
+        @include respond (tab) {
+            flex-grow: 1;
+            margin-bottom: .4rem;
+        }
         
     }
     &__list:hover::after,
@@ -69,6 +84,12 @@
 
                 display: flex;
                 align-items: center;
+                
+                // @include respond (tab) {
+                //    flex-grow: 1;
+                // }
+
+              
             }
         
 
@@ -85,10 +106,21 @@
         padding: 2.5rem ;
         font-size: 1.2rem;
        text-align: center;
+
+       @include respond (tab) {
+       display: none;  
+    }
+      
+    }
+
+    @include respond (tab) {
+       padding-top: 0;
+       flex: 0 0 9%;
     }
 
 }
 
 .mull {
     flex: 1; 
+    color: #000;
 }
