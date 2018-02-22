@@ -242,6 +242,14 @@ body {
 .mull {
   flex: 1; }
 
+.gallery {
+  display: flex; }
+  .gallery .pic-holder {
+    width: 100%; }
+    .gallery .pic-holder > img {
+      width: 100%;
+      object-fit: cover; }
+
 .container {
   max-width: 120rem;
   min-width: 80vh;
