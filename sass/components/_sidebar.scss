@@ -1,0 +1,52 @@
+.content {
+    display: flex;
+    background-color: red;
+    height: 40rem;
+
+}
+.sidebar {
+    flex: 0 0 18%;
+    background: orange; 
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    &__nav {
+        align-self: stretch;
+        background-color: green;
+        list-style: none;
+    }
+
+    &__list {
+background: rebeccapurple;
+
+align-self: stretch;
+    }
+
+    &__link {
+        color: #fff; 
+        text-decoration: none;
+
+        display: flex;
+        align-items: center;
+        
+    }
+
+    &__svg {
+        height: 2rem;
+        width: 2rem;
+        fill: currentColor;
+        margin-right: 1.5rem;
+    }
+
+    &__copyright {
+        padding: 3rem;
+    }
+
+}
+
+.mull {
+    flex: 1; 
+}
