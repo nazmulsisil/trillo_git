@@ -66,11 +66,13 @@ li {
     overflow: hidden; }
     .booking__button > span {
       display: inline-block; }
+    .booking__button:hover {
+      background-image: linear-gradient(to right, #BA265D, #eb2f64); }
   .booking__main {
-    padding: 3rem 15rem;
+    padding: 2rem 12rem;
     transition: all .5s; }
   .booking__alt {
-    padding: 3rem 0;
+    padding: 2rem 0;
     position: absolute;
     top: 100%;
     left: 50%;

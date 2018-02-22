@@ -22,10 +22,14 @@
     border-radius: 666px;
     position: relative;
     overflow: hidden;
-
+    
     & > span { 
       display: inline-block;
-
+      
+    }
+    
+    &:hover {
+      background-image: linear-gradient(to right, $Primary-dark, $Primary);
     }
 
   }
