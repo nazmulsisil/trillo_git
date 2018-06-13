@@ -1,0 +1,29 @@
+@keyframes moveUp {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 1rem 4rem rgba(0,0,0,.25);
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: none;
+    }
+} 
+
+@keyframes moveinLeft {
+    0% {
+        transform: translate(20%, 0);
+        opacity: 0; 
+    }
+    70% {
+        transform: translate(-5%, 0);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+} 
+
